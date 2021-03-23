@@ -47,44 +47,84 @@ header {
     text-align: center;
     grid-template-columns: max-content max-content 1fr max-content max-content max-content;
     padding: 6px;
+    align-items: center;
+    margin-top: 4px;
 }
 
 #about-button {
     grid-column: 1 / 2;
     padding: 5px;
-    margin-top: 5px;
+    margin-right: 5px;
     margin-left: 15px;
 }
+
 #store-button {
     grid-column: 2 / 3;
     padding: 5px;
-    margin: 5px;
+    margin: 0px 5px 0px 5px;
 }
+
 #gmail-button {
     font-size: 13px;
     grid-column: 3 / 4;
     text-align: right;
-    padding: 5px;
-    margin: 5px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 15px;
 }
+
 #images-button {
     font-size: 13px;
     grid-column: 4 / 5;
     text-align: right;
-    padding: 5px;
-    margin: 5px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 14px 0px 5px;
 }
+
 #google-apps-button {
     grid-column: 5 / 6;
     text-align: right;
-    padding: 5px;
-    margin: 5px;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 4px 0px 0px;
+    height: 40px;
+    width: 40px;
+    line-height: normal;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: #5f6368 !important;
+    opacity: 1;
+    fill: currentColor;
+    border-radius: 50%;
 }
+
+#google-apps-button:hover {
+    background-color: #EFEBF0;
+}
+
 #sign-in-button {
     grid-column: 6 / 7;
     padding: 5px;
-    margin-top: 5px;
-    margin-right: 15px;
+    margin: 0px 12px 0px 8px;
+    background-color: #1a73e8;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .25px;
+    border-radius: 4px;
+    padding: 9px 23px;
+    line-height: 16px;
+    min-width: 96px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+#sign-in-button:hover {
+    background-color: #2b7de9;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+}
+
+#sign-in-button-text:hover {
+    text-decoration: none;
 }
 
 #logo-searchbar-buttons-offering {
@@ -106,6 +146,10 @@ header {
 #buttons {
     padding-top: 18px;
     margin: 11px 4px;
+}
+
+#buttons :hover { 
+    cursor: pointer;
 }
 
 #footer-bottom-box {
@@ -142,4 +186,8 @@ header {
 
 #settings-button {
     padding: 15px;
+}
+
+.blue-link {
+    color: #1a0dab !important;
 }
