@@ -23,10 +23,18 @@ footer {
     border-bottom: 1px solid;
     border-color: #dadce0;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 #footer-top-box-text {
     padding: 15px 30px;
+    font-size: 15px;
+}
+
+#footer-bottom-box {
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin: 0px 20px;
 }
 
 a, a:visited {
@@ -87,7 +95,6 @@ header {
     margin: 0px 4px 0px 0px;
     height: 40px;
     width: 40px;
-    line-height: normal;
     white-space: nowrap;
     box-sizing: border-box;
     color: #5f6368 !important;
@@ -109,8 +116,7 @@ header {
     font-weight: 500;
     letter-spacing: .25px;
     border-radius: 4px;
-    padding: 9px 23px;
-    line-height: 16px;
+    padding: 10px 23px;
     min-width: 96px;
     box-sizing: border-box;
     border: 1px solid transparent;
@@ -141,6 +147,56 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#searchbar {
+    display: flex;
+    border: 1px solid #dfe1e5;
+    height: 44px;
+    background-color: white;
+    box-shadow: none;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 584px;
+    align-items: center;
+    padding: 0px 8px 0px 14px;
+}
+
+#searchbar:hover, #searchbar:focus-within {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#full-length-mag-glass {
+    display: inline-block;
+    color: #9aa0a6;
+    fill: currentColor;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+}
+
+#searchbar-box {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding-left: 13px;
+    flex: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    height: 34px;
+}
+
+#searchbar-box:focus{
+    outline: none;
 }
 
 #buttons {
@@ -152,8 +208,27 @@ header {
     cursor: pointer;
 }
 
+.search-buttons {
+    padding: 0px 16px 0px 16px;
+    margin: 11px 4px 11px 4px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    height: 36px;
+    min-width: 54px;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid transparent;
+}
+
+.search-buttons:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
 #footer-bottom-box {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #footer-bottom-box-left {
@@ -166,28 +241,40 @@ header {
 
 #advertising-button {
     padding: 15px;
+    margin-bottom: 1px;
 }
 
 #business-button {
     padding: 15px;
+    margin-bottom: 1px;
 }
 
 #howsearchworks-button {
     padding: 15px;
+    margin-bottom: 1px;
 }
 
 #privacy-button {
     padding: 15px;
+    margin-bottom: 1px;
 }
 
 #terms-button {
     padding: 15px;
+    margin-bottom: 1px;
 }
 
 #settings-button {
     padding: 15px;
+    margin-bottom: 1px;
 }
 
 .blue-link {
     color: #1a0dab !important;
+}
+
+@media screen and (min-width: 1200px) {
+    #footer-bottom-box {
+        justify-content: space-between;
+    }
 }
